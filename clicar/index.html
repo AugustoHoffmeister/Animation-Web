@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Efeitos de clicar e segurar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section>
+        <h2>Efeitos de clicar e segurar</h2>
+        <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos dolorum dolorem itaque quod accusamus nobis ullam excepturi, quo magnam recusandae est qui ut omnis soluta, perspiciatis labore consequatur totam odit?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores explicabo eum atque? Non nisi ab quibusdam dolorum id rerum. Tempore ex maiores suscipit nulla? Laborum blanditiis eaque quia assumenda repellendus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui excepturi, culpa fugiat a autem quos distinctio accusantium animi deserunt, blanditiis quae doloribus! Asperiores, consequatur consequuntur illo facilis est voluptas sapiente?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, asperiores autem? Vero optio, expedita officia placeat doloremque, at aut quia quo autem vel, delectus esse harum. Molestiae voluptates minima saepe!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, natus accusamus provident possimus, atque tempore accusantium corporis expedita, molestias sapiente quasi iure facere hic illum similique soluta odio error voluptatem.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos dolorum dolorem itaque quod accusamus nobis ullam excepturi, quo magnam recusandae est qui ut omnis soluta, perspiciatis labore consequatur totam odit?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores explicabo eum atque? Non nisi ab quibusdam dolorum id rerum. Tempore ex maiores suscipit nulla? Laborum blanditiis eaque quia assumenda repellendus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui excepturi, culpa fugiat a autem quos distinctio accusantium animi deserunt, blanditiis quae doloribus! Asperiores, consequatur consequuntur illo facilis est voluptas sapiente?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, asperiores autem? Vero optio, expedita officia placeat doloremque, at aut quia quo autem vel, delectus esse harum. Molestiae voluptates minima saepe!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, natus accusamus provident possimus, atque tempore accusantium corporis expedita, molestias sapiente quasi iure facere hic illum similique soluta odio error voluptatem.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, asperiores autem? Vero optio, expedita officia placeat doloremque, at aut quia quo autem vel, delectus esse harum. Molestiae voluptates minima saepe!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, natus accusamus provident possimus, atque tempore accusantium corporis expedita, molestias sapiente quasi iure facere hic illum similique soluta odio error voluptatem.
+        </p>
+    </section>
+    <div id="cursor"></div>
+    <script type="text/javascript">
+        var cursor = document.getElementById('cursor');
+        window.onmousemove = function(e){
+            var x = e.clientX,
+                y = e.clientY;
+            cursor.style.left = x + 'px';
+            cursor.style.top = y + 'px';
+        }
+    </script>
+</body>
+</html>
