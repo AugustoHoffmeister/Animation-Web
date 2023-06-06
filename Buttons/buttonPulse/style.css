@@ -1,0 +1,47 @@
+*
+body{
+    margin: 0;
+    padding: 0;
+    background: green;
+}
+a
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 100px;/*tamanho*/
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-decoration: nome;
+    letter-spacing: 6px;
+    font-size: 24px;
+    color: green;
+    background: yellow;
+    border-radius: 60px;
+    box-shadow: 0 0 15px yellow, 0 0 25px yellow;/*da brilho*/
+    transition: 2s;
+}
+a:hover
+{
+    transform: translate(-50%, -50%) scale(1.2);
+    animation: pulse 1s linear forwards;
+}
+@keyframes pulse
+{
+0%
+{
+    box-shadow: 0 0 10px yellow, 0 0 20px yellow;
+}
+50%
+{
+    box-shadow: 0 0 20px yellow.5 0 0 40px yellow.5;
+}
+100%
+{
+    box-shadow: 0 0 0 20px , 0 0 0 80px;
+}
+}
