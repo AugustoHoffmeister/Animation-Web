@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depoimentos de Clientes</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div class="testemunhoBox">
+                      <img src="imagens/imagem-01.png" alt="Foto" class="quote">
+                      <div class="content">
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque obcaecati culpa illum in eos veritatis, nemo possimus aspernatur non dolor? Nulla voluptate perspiciatis quia officiis tenetur quas neque consequuntur inventore!</p>
+                          <div class="detalhes">
+                              <div class="imgBx">
+                                  <img src="imagens/foto-01.jpg">
+                              </div>
+                              <h3>Someone Famous <br> <span>Creative Designer</span></h3>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testemunhoBox">
+                        <img src="imagens/imagem-01.png" alt="Foto" class="quote">
+                        <div class="content">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque obcaecati culpa illum in eos veritatis, nemo possimus aspernatur non dolor? Nulla voluptate perspiciatis quia officiis tenetur quas neque consequuntur inventore!</p>
+                            <div class="detalhes">
+                                <div class="imgBx">
+                                    <img src="imagens/foto-02.jpg">
+                                </div>
+                                <h3>Someone Famous <br> <span>Creative Designer</span></h3>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testemunhoBox">
+                        <img src="imagens/imagem-01.png" alt="Foto" class="quote">
+                        <div class="content">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque obcaecati culpa illum in eos veritatis, nemo possimus aspernatur non dolor? Nulla voluptate perspiciatis quia officiis tenetur quas neque consequuntur inventore!</p>
+                            <div class="detalhes">
+                                <div class="imgBx">
+                                    <img src="imagens/foto-05.jpg">
+                                </div>
+                                <h3>Someone Famous <br> <span>Creative Designer</span></h3>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testemunhoBox">
+                        <img src="imagens/imagem-01.png" alt="Foto" class="quote">
+                        <div class="content">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque obcaecati culpa illum in eos veritatis, nemo possimus aspernatur non dolor? Nulla voluptate perspiciatis quia officiis tenetur quas neque consequuntur inventore!</p>
+                            <div class="detalhes">
+                                <div class="imgBx">
+                                    <img src="imagens/foto-03.jpg">
+                                </div>
+                                <h3>Someone Famous <br> <span>Creative Designer</span></h3>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testemunhoBox">
+                        <img src="imagens/imagem-01.png" class="quote">
+                        <div class="content">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque obcaecati culpa illum in eos veritatis, nemo possimus aspernatur non dolor? Nulla voluptate perspiciatis quia officiis tenetur quas neque consequuntur inventore!</p>
+                            <div class="detalhes">
+                                <div class="imgBx">
+                                    <img src="imagens/foto-04.jpg">
+                                </div>
+                                <h3>Someone Famous <br> <span>Creative Designer</span></h3>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2,
+            slideShadows: true,
+          },
+          loop: true
+        });
+      </script>
+</body>
+</html>
