@@ -1,0 +1,67 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f8f8f8;
+}
+.card
+{
+    position: relative;
+    height: 400px;
+    width: 300px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+.card span
+{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    height: 150px;
+    width: 150px;
+    /**background: red;**/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.card span::before
+{
+    content: 'Fita';
+    position: absolute;
+    height: 40px;
+    width: 150%;
+    background: #62baea;
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1em;
+    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.1);
+}
+.card span::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    width: 10px;
+    background: #4a98bf;
+    z-index: -1;
+    box-shadow: 140px -140px #4a98bf;
+}
