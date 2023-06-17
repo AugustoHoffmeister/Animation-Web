@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>barra de navegação suspensa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navegador">
+        <div class="alternancia"><span></span></div>
+        <ul>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#serviços">Serviços</a></li>
+            <li><a href="#suporte">Suporte</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </div>
+    <section id="produtos"><h2>Produtos</h2></section>
+    <section id="serviços"><h2>Serviços</h2></section>
+    <section id="suporte"><h2>Suporte</h2></section>
+    <section id="contato"><h2>Contato</h2></section>
+    <script>
+        const navegador = document.querySelector('.navegador');
+        document.querySelector('.alternancia').onclick = function() {
+            this.classList.toggle('ativar');
+            navegador.classList.toggle('ativar');
+        }
+    </script>
+</body>
+</html>
