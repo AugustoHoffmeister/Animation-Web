@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background:black;
+    overflow: hidden;
+    animation: animatecolor 5s linear infinite;
+}
+@keyframes animatecolor {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+.container span {
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.container span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: greenyellow;
+    box-shadow: 0 0 4px greenyellow,
+                0 0 8px greenyellow,
+                0 0 10px greenyellow,
+                0 0 12px greenyellow,
+                0 0 14px greenyellow,
+                0 0 16px greenyellow,
+                0 0 18px greenyellow,
+                0 0 20px greenyellow,
+                0 0 22px greenyellow,
+                0 0 24px greenyellow,
+                0 0 26px greenyellow,
+                0 0 28px greenyellow,
+                0 0 30px greenyellow,
+                0 0 32px greenyellow,
+                0 0 34px greenyellow,
+                0 0 36px greenyellow,
+                0 0 38px greenyellow,
+                0 0 40px greenyellow,
+                0 0 42px greenyellow,
+                0 0 44px greenyellow,
+                0 0 46px greenyellow,
+                0 0 48px greenyellow,
+                0 0 50px greenyellow,
+                0 0 52px greenyellow,
+                0 0 54px greenyellow,
+                0 0 56px greenyellow,
+                0 0 58px greenyellow,
+                0 0 60px greenyellow,
+                0 0 62px greenyellow,
+                0 0 64px greenyellow,
+                0 0 66px greenyellow,
+                0 0 68px greenyellow,
+                0 0 70px greenyellow,
+                0 0 72px greenyellow,
+                0 0 74px greenyellow,
+                0 0 76px greenyellow,
+                0 0 78px greenyellow,
+                0 0 80px greenyellow,
+                0 0 82px greenyellow,
+                0 0 84px greenyellow,
+                0 0 86px greenyellow,
+                0 0 88px greenyellow,
+                0 0 90px greenyellow,
+                0 0 92px greenyellow,
+                0 0 94px greenyellow,
+                0 0 96px greenyellow,
+                0 0 98px greenyellow,
+                0 0 100px greenyellow;
+    border-radius: 50%;
+    transition: 2s;
+    transform: scale(0);
+}
+.container span:hover::before {
+    transition: 0s;
+    transform: scale(0.5);
+}
