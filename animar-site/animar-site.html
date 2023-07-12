@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Como fazer animação em sites</title>
+  </head>
+  <body>
+    <h2 class="animate__animated animate__bounce">
+      Como fazer animação em sites
+    </h2>
+    <a
+      href="https://www.youtube.com/watch?v=vJsXm1wSiMk&list=PL2Fdisxwzt_dxY4kmnphLjfRoRLdUOqyu&index=7&ab_channel=Programa%C3%A7%C3%A3oWeb"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Video Aula - Como Fazer Animações!
+    </a>
+    <br />
+    <a href="https://animate.style" target="_blank" rel="noopener noreferrer"
+      >animate.style
+    </a>
+    <br />
+    <h3>Teste 01 flip</h3>
+    <button id="test1" class="animate__animated" onclick="flipa()">
+      Click para flipar
+    </button>
+
+    <h3>Teste 02</h3>
+    <div data-aos="zoom-out">Teste</div>
+    <div data-aos="fade-up" data-aos-duration="3000">Teste</div>
+    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">Teste</div>
+
+    <h3>Teste 03</h3>
+<div>
+  
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <lottie-player
+        src="https://lottie.host/d1221bb5-99b5-4323-8129-b3d503fc681d/OOv0tT9VMG.json"
+        background="transparent"
+        speed="1"
+        style="width: 300px; height: 300px"
+        loop
+        autoplay
+        direction="1"
+        mode="normal"
+      ></lottie-player>
+  
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <lottie-player
+        src="https://lottie.host/a586a391-d18c-40d6-8f7b-08b3814cde59/K8uU0TxPss.json"
+        background="#bbbb"
+        speed="1"
+        style="width: 300px; height: 300px"
+        direction="1"
+        mode="normal"
+        loop
+        autoplay
+        hover
+      ></lottie-player>
+</div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+
+      function flipa() {
+        let card = document.getElementById("test1");
+        card.classList.add("animate__flip");
+        setTimeout(() => {
+          card.classList.remove("animate__flip");
+        }, 800);
+      }
+    </script>
+  </body>
+</html>
