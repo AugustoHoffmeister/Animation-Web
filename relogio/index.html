@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relogio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="clock">
+        <h2>A hora certa</h2>
+        <div id="time">
+            <div><span id="horas">00</span><span>Horas</span></div>
+            <div><span id="minutos">00</span><span>Minutos</span></div>
+            <div><span id="segundos">00</span><span>Segundos</span></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    function clock(){
+
+        var horas = document.getElementById('horas');
+        var minutos = document.getElementById('minutos');
+        var segundos = document.getElementById('segundos');
+
+        var h = new Date().getHours();
+        var m = new Date().getMinutes();
+        var s = new Date().getSeconds();
+
+        horas.innerHTML = h;
+        minutos.innerHTML = m;
+        segundos.innerHTML = s;
+    }
+    var interval = setInterval(clock,1000);
+    </script>
+</body>
+</html>
